@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+
+    <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel = "stylesheet"
+     href = "{% static 'materialize/css/materialize.css' %}">
+
+    <script src = "{% static 'materialize/js/jquery.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src = "{% static 'materialize/js/materialize.js' %}"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>{% block title %} {% endblock %}</title>
+
+    <style>
+        .brand-logo p {
+            font-size: 30px;
+            margin-top: -1px;
+            margin-left: 5px;
+        }
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+          }
+
+          main {
+            flex: 1 0 auto;
+          }
+        footer.page-footer {
+            padding-top: 0px;
+          }
+    </style>
+
+    {% block style %}
+    {% endblock %}
+
+
+</head>
+
+<body>
+
+    <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper light-blue">
+              &nbsp;<a href="{% url 'main' %}" class="brand-logo"><p>Notification System</p></a>
+            <ul class="right hide-on-med-and-down">
+
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'contact' %}">Contact Us</a></li>
+              {% if request.user.is_authenticated %}
+                  <li><a href="{% url 'accounts:profile' %}">Profile</a></li>
+                  <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
+              {% endif %}
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    {% block main %}
+    {% endblock %}
+
+    <footer class="page-footer light-blue">
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Punjab Engineering College
+            <a class="grey-text text-lighten-4 right" href="#!">Social links will come here</a>
+            </div>
+          </div>
+    </footer>
+
+    {% block js %}
+    {% endblock %}
+
+
+
+</body>
+</html>

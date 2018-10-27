@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/Query.css' %}">
+
+{% endblock %}
+
+{% block main %}
+
+    <blockquote>
+
+    <h1 style="color: #880e4f">QUERY FORM</h1>
+    </blockquote>
+
+  <form method="post" action="#">
+
+  {% csrf_token %}
+
+
+
+
+  </form>
+
+
+{% endblock %}
