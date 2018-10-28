@@ -44,7 +44,8 @@ And we are done!
 
 > Home Page
 
-![Home Page](https://user-images.githubusercontent.com/37483320/43248981-1a411ec0-90d7-11e8-817e-bf905db16b0c.png)
+![Home Page](https://raw.githubusercontent.com/IEEE-Software-Hackathon/tell-e-gram/master/static/Images/screenshot/Screenshot%20(25).png)
+![Home Page](https://raw.githubusercontent.com/IEEE-Software-Hackathon/tell-e-gram/master/static/Images/screenshot/Screenshot%20(26).png)
 
 > Login Page
 
