@@ -52,10 +52,10 @@
     <div class="navbar-fixed">
         <nav>
           <div class="nav-wrapper blue lighten-1">
-              &nbsp;<a href="{% url 'main' %}" class="brand-logo" style="color: white"><p>Tell-E-Gram</p></a>
+              &nbsp;<a href="{% url 'main' %}" class="brand-logo" style="color: white"><p>Tell-e-Gram</p></a>
             <ul class="right hide-on-med-and-down">
 
-              <li><a href="{% url 'about' %}">About</a></li>
+{#              <li><a href="{% url 'about' %}">About</a></li>#}
               {% if request.user.is_authenticated %}
                   <li><a href="{% url 'accounts:profile' %}">Profile</a></li>
                   <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
