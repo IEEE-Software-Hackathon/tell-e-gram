@@ -49,18 +49,17 @@ And we are done!
 
 > Login Page
 
-![Login Page](https://user-images.githubusercontent.com/37483320/43248983-1a94bc74-90d7-11e8-9737-37ad9e116266.png)
+![Login Page](https://raw.githubusercontent.com/IEEE-Software-Hackathon/tell-e-gram/master/static/Images/screenshot/Screenshot%20(27).png)
+![Login Page](https://raw.githubusercontent.com/IEEE-Software-Hackathon/tell-e-gram/master/static/Images/screenshot/Screenshot%20(28).png)
 
 > Faculty/Staff Profile Page
 
-![Faculty/Staff Profile Page](https://user-images.githubusercontent.com/37483320/43248979-19d9e70a-90d7-11e8-8564-3d344707de5f.png)
+![Faculty/Staff Profile Page](https://raw.githubusercontent.com/IEEE-Software-Hackathon/tell-e-gram/master/static/Images/screenshot/Screenshot%20(29).png)
 
 > Message Creation Page for Staff Access Only
 
-![Message Creation Page for Staff Access Only](https://user-images.githubusercontent.com/37483320/43249680-f3efacee-90d8-11e8-8bb3-b80afffc3343.png)
+![Message Creation Page for Staff Access Only](https://raw.githubusercontent.com/IEEE-Software-Hackathon/tell-e-gram/master/static/Images/screenshot/Screenshot%20(30).png)
 
-> Student Dashboard
 
-![Student Dashboard](https://user-images.githubusercontent.com/37483320/43248984-1ad3a3b2-90d7-11e8-837a-0c541a767932.png)
 
 
