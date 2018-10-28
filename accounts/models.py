@@ -200,7 +200,7 @@ class Faculty(models.Model):
 
     def get_designation_display(self):
 
-        return Designations[int(self.Designation)][1]
+        return Designations[int(self.Designation)-1][1]
 
     def __str__(self):
         return self.FacultyID

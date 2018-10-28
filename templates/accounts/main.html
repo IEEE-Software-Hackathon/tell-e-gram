@@ -5,40 +5,46 @@
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 {% endblock %}
 
 {% block main %}
 
 
-    <div class="container-fluid">
-        {% if not request.user.is_authenticated %}
-        <div class="row center-align teal lighten-1" id="section1">
-            <div class="col s4 offset-s4" >
-                <div class="transparent" id="first-section">
-
-                <a style="margin-right: 10px " href="{% url 'accounts:login' %}" class="waves-effect waves-light btn-large light-blue"><i class="material-icons left">account_circle</i>LOGIN</a>
-                <a href="{% url 'accounts:signup' %}"class="waves-effect waves-light btn-large orange"><i class="material-icons right">add_circle_outline</i>SIGN UP</a>
-                </div>
+    <br>
+    <br>
+      <section id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+              <img src="{% static 'images/download.jpg' %}" class="img-fluid" alt="Demo image">
             </div>
+            <div class="col-md-7 content-box hero-content">
+              <span>Unlimited Knowledge</span>
+              <h1>Know ur teachers at one click</b></h1>
+              <p>Boost ur Knowledge</p>
+                {% if not request.user.is_authenticated %}
+              <a href="{% url 'accounts:signup' %}" class="btn btn-regular">Sign-up</a>
+              <a href="{% url 'accounts:login' %}" class="btn btn-regular">Sign-in</a>
+                {% endif %}
+            </div>
+          </div>
         </div>
-        {% endif %}
-    <div class="parallax1"></div>
+      </section>
 
-    <div class="row center-align teal lighten-1" id="second-section">
-        <div class="col s4 offset-s2" id="text1">
-
-        Notification-System is a project which will help faculty to intimidate students about any important information
-        like Schedule Changes, any upcoming seminar and other information. This information will be shared through SMS.
+      <section id="call-to-action">
+        <div class="container text-center">
+          <h2>TEXT 1</h2>
+          <div class="title-block">
+            <p>TEXT 2</p>
+{#            <a href="#" class="btn btn-regular">Get Started</a>#}
+          </div>
         </div>
-
-        <div class="col s3 offset-s1" id="image">
-            <img src="{% static 'Images/message.jpg' %}" class="responsive-img">
-        </div>
-    </div>
-
-    <div class="parallax2"></div>
-    </div>
+      </section>
 
 
 {% endblock %}

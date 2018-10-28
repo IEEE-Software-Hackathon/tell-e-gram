@@ -1,3 +1,4 @@
+from Quickstart import fetchEvents
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import AuthenticationForm
@@ -155,6 +156,16 @@ def ProfileView(request):
     ID = request.session['username']
     user_type = request.session['user']
 
+    print(ID)
+
+    All_events = fetchEvents()
+    time = []
+    description = []
+    if All_events:
+        for i in All_events:
+            time.append(i[0])
+            description.append(i[1])
+
     if user_type == 'student':
 
         object = Student.objects.get(StudentID__exact=ID)
@@ -170,6 +181,8 @@ def ProfileView(request):
             "form": form,
             "all_teachers":all_teachers,
             "Responses": Responses,
+            "All_events":All_events,
+            "description":description,
         }
 
         return render(request, 'accounts/Student_Home.html', context)
@@ -185,6 +198,8 @@ def ProfileView(request):
             "all_messages":all_messages,
             "form":form,
             "Questions":Questions,
+            "All_events":All_events,
+            "description":description,
         }
 
         return render(request, 'accounts/Faculty_Home.html', context)

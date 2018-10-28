@@ -116,12 +116,20 @@
                       <h4 class="task-card-title">My Task <a href="#" class="small white-text right">Add Task</a> </h4>
                       <p class="task-card-date">Date</p>
                   </li>
+                  {% if All_events %}
+                        {% for i,j in All_events %}
                   <li class="collection-item dismissable">
                       <input type="checkbox" id="task1" />
-                      <label for="task1">Task1 <a href="#" class="secondary-content"><span class="ultra-small">Today</span></a>
+                      <label for="task1">{{ j }} <a href="#" class="secondary-content"><span class="ultra-small">{{ i }}</span></a>
                       </label>
-                      <span class="task-cat teal">Tag</span>
+{#                      <span class="task-cat teal">Tag</span>#}
                   </li>
+                        {% endfor %}
+                    {% else %}
+                    <li>
+                    <p>No Events Yet!</p>
+                    </li>
+                    {% endif %}
 
                 </ul>
                 <!-- task-card -->

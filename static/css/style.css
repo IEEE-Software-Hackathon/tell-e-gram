@@ -1,34 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-
-.parallax1 {
-    /* The image used */
-
-    background-image: url('../Images/TechBackNew.jpg');
-
-    /* Set a specific height */
-    min-height: 320px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.parallax2 {
-    /* The image used */
-
-    background-image: url('../Images/TechBack2.jpg');
-
-    /* Set a specific height */
-    min-height: 300px;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #text1{
     padding-top: 100px;
     padding-left: 150px;
@@ -55,7 +24,134 @@
     margin-bottom: 30px;
 }
 
-#first-section{
+#first-section {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+
+#hero h1 {
+	font-size: 50px;
+	font-weight: 300;
+}
+
+#hero p {
+	font-size: 24px;
+    font-weight: 300;
+    color: #8da2b5;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#hero span {
+	font-weight: 400;
+    color: #0095f7;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+
+#call-to-action {
+	background-image: url('../Images/call-to-action.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+#call-to-action h2 {
+	color: #ffffff;
+}
+
+#call-to-action p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #ffffff;
+	opacity: .8;
+	margin-bottom: 40px;
+}
+
+#call-to-action .title-block {
+	margin-bottom: 0px;
+}
+
+#call-to-action .btn-regular {
+	background-color: #ffffff!important;
+	color: #0095f7!important;
+	padding: 15px 45px;
+}
+
+#call-to-action .title-block {
+	margin-bottom: 0px;
+}
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #3a3f52;
+}
+
+h2 {
+	font-size: 44px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: .05em;
+	color: #53627C;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+b {
+	font-weight: 700;
+}
+
+section {
+	padding: 100px 0px;
+}
+
+.title-block {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.title-block p {
+	font-size: 20px;
+	font-weight: 300;
+	color: #8da2b5;
+	margin-bottom: 0px;
+}
+
+.divider {
+	padding: 2rem 0 0;
+    margin: 2rem 0 0;
+    border-top: 1px solid #3c3f45;
+}
+
+.divider-light {
+	padding: 2rem 0 0;
+    margin: 2rem 0 0;
+	border-top: 1px solid #edf1f2
+}
+
+.nav-wrapper a{
+    color:white;
 }

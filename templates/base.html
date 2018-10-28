@@ -51,12 +51,11 @@
 
     <div class="navbar-fixed">
         <nav>
-          <div class="nav-wrapper light-blue">
-              &nbsp;<a href="{% url 'main' %}" class="brand-logo"><p>Notification System</p></a>
+          <div class="nav-wrapper blue lighten-1">
+              &nbsp;<a href="{% url 'main' %}" class="brand-logo" style="color: white"><p>Tell-E-Gram</p></a>
             <ul class="right hide-on-med-and-down">
 
               <li><a href="{% url 'about' %}">About</a></li>
-              <li><a href="{% url 'contact' %}">Contact Us</a></li>
               {% if request.user.is_authenticated %}
                   <li><a href="{% url 'accounts:profile' %}">Profile</a></li>
                   <li><a href="{% url 'accounts:logout' %}">Logout</a></li>
@@ -69,14 +68,6 @@
     {% block main %}
     {% endblock %}
 
-    <footer class="page-footer light-blue">
-          <div class="footer-copyright">
-            <div class="container">
-            © 2018 Punjab Engineering College
-            <a class="grey-text text-lighten-4 right" href="#!">Social links will come here</a>
-            </div>
-          </div>
-    </footer>
 
     {% block js %}
     {% endblock %}
