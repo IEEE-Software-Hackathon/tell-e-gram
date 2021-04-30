@@ -33,7 +33,7 @@ PyJWT==1.6.4
 python-dateutil==2.7.3
 pytz==2018.4
 requests==2.19.1
-rsa==4.0
+rsa==4.7
 s3transfer==0.1.13
 six==1.11.0
 uritemplate==3.0.0
